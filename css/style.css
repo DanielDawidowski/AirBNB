@@ -253,3 +253,85 @@ main>section {
 .countries .price {
     font-size: .8rem;
 }
+
+.footerBtn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: .5rem 1rem;
+    background-color: var(--light);
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.footer {
+    border-top: 1px solid #dbdbdb;
+    padding: 3rem;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.nav-footer h3 {
+    font-size: 1.2rem;
+}
+
+.nav-footer .menu {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, auto);
+    grid-row-gap: .5rem;
+}
+
+.nav-footer .menu a {
+    color: var(--dark);
+    text-decoration: none;
+    display: block;
+    font-size: .9rem;
+}
+
+.nav-footer .menu a .new {
+    background-color: rgb(0, 119, 126);
+    margin-left: 1rem;
+    padding: .2rem .4rem .4rem .4rem;
+    color: var(--light);
+    border-radius: 5px;
+}
+
+.social-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-nav a {
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.social-nav a:last-of-type {
+    margin-right: 0;
+}
+
+.social-nav a::before {
+    font-family: "Font Awesome 5 Brands";
+    color: var(--dark);
+    font-size: 1.8rem;
+}
+
+.social-nav a[href*='facebook.com']::before {
+    content: '\f39e';
+}
+
+.social-nav a[href*='twitter.com']::before {
+    content: '\f099';
+}
+
+.social-nav a[href*='instagram.com']::before {
+    content: '\f16d';
+}
+
+.social-nav a span {
+    display: none
+}
